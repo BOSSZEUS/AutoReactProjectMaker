@@ -5,3 +5,4 @@ will allow you to run the program and make a react project for you. will install
 - [ ] item 2
 - [ ] item 3
 - [ ] etc
+- [x] put an x in the box to mark as checked
