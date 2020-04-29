@@ -1,5 +1,5 @@
-# AutoReactProjectMaker
-will allow you to run the program and make a react project for you. will install all necessary items and remove everything you wont need 
+# :boom: Automatic React Project Boilerplate Maker :boom:
+This tool should allow you to run the program and make a react project for you. will install all necessary items and remove everything you won't need for basic React-App functionality.
 ### TO DO:
 - [ ] Remove unused modules in create-react-app framework such as webhooks, the react logo, etc.
 - [ ] Add an auto install script for NPM packages in a npm.json skeleton. Will need to add ``npm i && cd client && npm i && cd src && npm i``
