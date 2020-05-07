@@ -1,0 +1,29 @@
+{
+  "name": "AutoReactProjectMaker",
+  "version": "1.0.0",
+  "description": "This tool should allow you to run the program and make a react project for you. will install all necessary items and remove everything you won't need for basic React-App functionality. ### TO DO: - [ ] Remove unused modules in create-react-app framework such as webhooks, the react logo, etc. - [ ] Add an auto install script for NPM packages in a npm.json skeleton. Will need to add ``npm i && cd client && npm i && cd src && npm i`` - [ ] Upload package.json and clone repo in separate dir to test install scripts, the above may need to be reversed with ``cd src`` before ``cd client`` - [ ] etc - [x] put an x in the box to mark as checked",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*\" \" npm run client\"",
+    "client": "cd client && npm run start",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BOSSZEUS/AutoReactProjectMaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BOSSZEUS/AutoReactProjectMaker/issues"
+  },
+  "homepage": "https://github.com/BOSSZEUS/AutoReactProjectMaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
