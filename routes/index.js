@@ -1,5 +1,5 @@
-const router = require('express').Router()
+// const router = require('express').Router()
 
-router.use('/api', require('./itemRoutes.js'))
+// router.use('/api', require('./itemRoutes.js'))
 
-module.exports = router
+// module.exports = router
