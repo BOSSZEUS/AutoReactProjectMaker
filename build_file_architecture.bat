@@ -1,1 +1,1 @@
-npm i concurrently express if-env && cd client && npm i && cd src && mkdir views components routes models utils 
+echo SKIP_PREFLIGHT_CHECK=true >> .env && echo off && npm i concurrently express if-env && cd client && npm i && cd src && mkdir views components routes models utils 
