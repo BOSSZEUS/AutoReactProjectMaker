@@ -1,1 +1,1 @@
-echo SKIP_PREFLIGHT_CHECK=true >> .env && echo off && npm i concurrently express if-env && cd client && npm i && cd src && mkdir views components routes models utils 
+echo SKIP_PREFLIGHT_CHECK=true >> .env && echo off && npm i concurrently express if-env && if not exist "config" mkdir "config" && if not exist "routes" mkdir "routes" && if not exist "models" mkdir "models" && cd client && npm i && cd src && if not exist "views" mkdir "views" && if not exist "components" mkdir "components" && if not exist "utils" mkdir "utils"  
