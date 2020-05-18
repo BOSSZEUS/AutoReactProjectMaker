@@ -6,11 +6,13 @@
 - #### This allows for a more compact react.js boilerplate with less manual work involved.
 ### Everything you won't need for basic React-App functionality has already been removed, but you can add them back at your discretion.
 
-### TO DO:
+### TODO:
 - [x] Remove unused modules in create-react-app framework such as webhooks, the react logo, etc.
 - [x] Add an auto install script for NPM packages in a npm.json skeleton. Will need to add ``npm i && cd client && npm i && cd src && npm i``
 - [x] Upload package.json and clone repo in separate dir to test install scripts, the above may need to be reversed with ``cd src`` before ``cd client``
-- [ ] Get local server working so that we can test the base application. 
-- [ ] Add logic to check what server environment you are operating in.
-- [ ] *? Maybe add a mongoose/mongo db model and/or a MySQL model to ensure easiest possible setup*
-- [ ] Next steps...
+- [x] Get local server working so that we can test the base application. 
+- [x] Add logic to check what server environment you are operating in.
+### TODO: 
+- [ ] Maybe add a mongoose/mongo db model ensure easiest possible setup
+- [ ] Run CMD prompts on install to run mongodb and mongod in order to start the mongo instance
+- [ ] Create generic routes for defiined schema
