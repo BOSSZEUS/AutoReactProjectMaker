@@ -14,5 +14,5 @@
 - [x] Add logic to check what server environment you are operating in.
 ### TODO: 
 - [ ] Maybe add a mongoose/mongo db model ensure easiest possible setup
-- [ ] Run CMD prompts on install to run mongodb and mongod in order to start the mongo instance
-- [ ] Create generic routes for defiined schema
+- [ ] Run CMD prompts on install to run ```mongodb``` and ```mongo``` commmands in order to start and install the mongo instance ad DB
+- [x] Create generic routes for defiined schema

@@ -6,9 +6,9 @@ const { model, Schema } = require('mongoose')
 module.exports = model('appDatabase', new Schema({
   name: {
     type: String,
-    required: [true, '{PATH} is required'],
+    required: true,
     minlength: 10, // throw default error is <10
-    maxlength: [50, '{PATH} should be at max 50 chars long'],
+    maxlength: 50,
     match: [
       new RegExp('^[a-z ]+$', 'i'), // allow alphabets
       'Name should have alphabets and spaces'
@@ -18,28 +18,24 @@ module.exports = model('appDatabase', new Schema({
     required: true,
     trim: true,
     lowercase: true,
-
     type: String,
     unique: true
   },
   gender: {
     trim: true,
     lowercase: true,
-
     type: String,
     enum: {
       values: ['male', 'female'],
-      message: '{PATH} with {VALUE} is not correct.'
-    }
- 
-        default: 'male'
+    },
+    default: 'male'
   },
   age: {
     type: Number,
     min: 18,
-    max: [100, 'You are too old.']
-  }
-    email: {
+    max: 100,
+  },
+  email: {
     type: String,
     required: true,
     select: false
