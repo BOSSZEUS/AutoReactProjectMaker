@@ -16,6 +16,7 @@
 - [x] Add a mongoose/mongo db model ensure easiest possible setup.
 - [x] Run CMD prompts on install to run ```mongodb``` and ```mongo``` commmands in order to start and install the mongo instance ad DB.
 ### TODO: 
+- [ ] Get Mongo config to install the generic DB on ```npm start```
 - [ ] Add generic sign in page in views/components in order to test and utilize generic mongo db (appDatabase.db) and its routes.
 - [ ] Add comments to instruct app users on how to get started and how to customize their projects.
 - [ ] ? Maybe add general stylesheet for styling overrides if using a styling library (overrides.css) or simply for general styling with or without styling library (styles.css).

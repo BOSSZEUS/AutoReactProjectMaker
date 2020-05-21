@@ -1,1 +1,0 @@
-start mongod && start mongo

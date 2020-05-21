@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "bat": "build_file_architecture.bat",
-    "mongo": "runMongo.bat",
+    "mongo": "mongo.bat",
     "build": "cd client && npm run build",
     "install": "npm run bat && npm run mongo",
     "start:prod": "node server.js",
